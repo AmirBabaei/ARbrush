@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1A-7R-gSH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9P-eN-Uwv">
+                                <rect key="frame" x="164" y="602" width="46" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4GZ-YS-VSz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l9P-eN-Uwv" secondAttribute="bottom" constant="20" id="0g1-eb-9XF"/>
+                            <constraint firstItem="S1A-7R-gSH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6m0-dh-FUo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l9P-eN-Uwv" secondAttribute="bottom" constant="20" id="Scd-5F-qIg"/>
+                            <constraint firstItem="l9P-eN-Uwv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="VPC-Fb-8Jo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l9P-eN-Uwv" secondAttribute="trailing" constant="165" id="dUv-rJ-PJz"/>
+                            <constraint firstItem="S1A-7R-gSH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h01-f7-ZqL"/>
+                            <constraint firstItem="S1A-7R-gSH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oNN-hE-Au4"/>
+                            <constraint firstItem="S1A-7R-gSH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vDU-0g-u86"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="draw" destination="l9P-eN-Uwv" id="ZTI-S4-ZQs"/>
+                        <outlet property="sceneView" destination="S1A-7R-gSH" id="HSS-xa-aNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
